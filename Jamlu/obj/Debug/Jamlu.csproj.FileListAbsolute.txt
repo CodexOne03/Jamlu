@@ -1,0 +1,8 @@
+F:\Repos\Jamlu\Jamlu\bin\Debug\Jamlu.exe.config
+F:\Repos\Jamlu\Jamlu\bin\Debug\Jamlu.exe
+F:\Repos\Jamlu\Jamlu\bin\Debug\Jamlu.pdb
+F:\Repos\Jamlu\Jamlu\obj\Debug\Jamlu.csproj.AssemblyReference.cache
+F:\Repos\Jamlu\Jamlu\obj\Debug\Jamlu.csproj.SuggestedBindingRedirects.cache
+F:\Repos\Jamlu\Jamlu\obj\Debug\Jamlu.csproj.CoreCompileInputs.cache
+F:\Repos\Jamlu\Jamlu\obj\Debug\Jamlu.exe
+F:\Repos\Jamlu\Jamlu\obj\Debug\Jamlu.pdb
