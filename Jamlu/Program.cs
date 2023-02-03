@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Jamlu.Safe;
 
 namespace Jamlu
 {
@@ -129,148 +126,13 @@ namespace Jamlu
         }
     }
 
-    class Character
-    {
-        public int Armatura;
-        public int Danno;
-        public int Agilita;
-        public int Resistenza;
-        public int Vita;
+    
 
-        public void Danneggia(int danno)
-        {
-            if (danno > this.Armatura)
-            {
-                Console.WriteLine($"Armatura distrutta ({this.Armatura} danni arrecati)");
-                danno -= this.Armatura;
-                this.Armatura = 0;
-                if (danno > this.Resistenza)
-                {
-                    Console.WriteLine($"Resistenza azzerata ({this.Resistenza} danni arrecati)");
-                    danno -= this.Resistenza;
-                    this.Resistenza = 0;
-                    if (danno >= this.Vita)
-                    {
-                        Console.WriteLine($"Vita azzerata ({this.Vita} danni arrecati)");
-                        this.Vita = 0;
-                        return;
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Arrecati {danno} danni ai punti vita");
-                        this.Vita -= danno;
-                        return;
-                    }
-                }
-                else if (danno == this.Resistenza)
-                {
-                    Console.WriteLine($"Resistenza azzerata");
-                    this.Resistenza = 0;
-                    return;
-                }
-                else
-                {
-                    Console.WriteLine($"Arrecati {this.Resistenza} danni ai punti resistenza");
-                    this.Resistenza -= danno;
-                    return;
-                }
-            }
-            else if (danno == this.Armatura)
-            {
-                Console.WriteLine($"Armatura distrutta");
-                this.Armatura = 0;
-                return;
-            }
-            else
-            {
-                Console.WriteLine($"Arrecati {danno} danni ai punti armatura");
-                this.Armatura -= danno;
-                return;
-            }
-        }
-    }
+    
 
-    class Nemico : Character
-    {
-        public int Livello;
-        public Nemico(int armatura, int danno, int agilita, int resistenza, int vita, int livello)
-        {
-            this.Armatura = armatura;
-            this.Danno = danno;
-            this.Agilita = agilita;
-            this.Resistenza = resistenza;
-            this.Vita = vita;
-            this.Livello = livello;
-        }
-        public Nemico()
-        {
+    
 
-        }
-    }
+    
 
-    class Giocatore : Character
-    {
-        public string Classe;
-        public string Arma;
-        public int Exp;
-        public int Soldi;
-        public Abilita Abilita;
-
-        public Giocatore(int armatura, int danno, int agilita, int resistenza, int vita, string classe, string arma, Abilita abilita)
-        {
-            this.Classe = classe;
-            this.Arma = arma;
-            this.Armatura = armatura;
-            this.Danno = danno;
-            this.Agilita = agilita;
-            this.Resistenza = resistenza;
-            this.Vita = vita;
-            Abilita = abilita;
-        }
-
-        public Giocatore()
-        {
-
-        }
-    }
-
-    public class Abilita
-    {
-        public TipoAbilita Tipo;
-        public string Nome;
-        public int Ricarica = 3;
-
-        public Abilita(TipoAbilita tipo, string nome)
-        {
-            this.Tipo = tipo;
-            this.Nome = nome;
-        }
-
-        public Abilita()
-        {
-            Console.WriteLine("Seleziona il tipo di abilita:");
-            Console.WriteLine("1\t-\tSerie colpi: Tira un dado D4 all'inizio del tuo turno per segnare la quatità di colpi in serie che verranno tirati");
-            Console.WriteLine("2\t-\tRange danni: Tira un dado D4 all'inizio del tuo turno per segnare il range di danni da apportare al nemico, poi tira un altro D4 per segnare il numero nel range indicato");
-            Console.WriteLine("3\t-\tDanni bonus: Tira un dado D4 all'inizio del tuo turno per segnare la quantità di danni bonus da infliggere al nemico nel turno corrente");
-            int scelta = Console.ReadLine().SafeInt(1, 3);
-            string sicuro = "n";
-            do
-            {
-                Console.WriteLine("Scrivi il nome dell'abilità:");
-                this.Nome = Console.ReadLine();
-                Console.WriteLine($"Hai scritto \"{this.Nome}\"\nSei sicuro? (s/n)");
-                sicuro = Console.ReadLine();
-            }
-            while (!sicuro.ToLower().Contains("s"));
-            Console.WriteLine("Scrivi la quantità di turni impiegati per poter riutilizzare l'abilità:");
-            this.Ricarica = Console.ReadLine().SafeInt();
-        }
-    }
-
-    public enum TipoAbilita
-    {
-        SerieColpi,
-        RangeDanni,
-        DanniBonus
-    }
+    
 }

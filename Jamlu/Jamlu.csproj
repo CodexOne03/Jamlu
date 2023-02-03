@@ -43,11 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dado.cs" />
-    <Compile Include="Exts.cs" />
+    <Compile Include="Abilita.cs" />
+    <Compile Include="Character.cs" />
+    <Compile Include="Giocatore.cs" />
+    <Compile Include="Nemico.cs" />
+    <Compile Include="Safe\Dado.cs" />
+    <Compile Include="Safe\Exts.cs" />
     <Compile Include="Frasi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Safe\Testo.cs" />
+    <Compile Include="TipoAbilita.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
