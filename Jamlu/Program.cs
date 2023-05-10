@@ -9,6 +9,7 @@ namespace Jamlu
         {
             do
             {
+                #region CreaGiocatore
                 Giocatore giocatore = new Giocatore();
                 Console.WriteLine("Inserisci la tua armatura:");
                 giocatore.Armatura = Console.ReadLine().SafeInt();
@@ -20,6 +21,8 @@ namespace Jamlu
                 giocatore.Resistenza = Console.ReadLine().SafeInt();
                 Console.WriteLine("Inserisci la tua vita:");
                 giocatore.Vita = Console.ReadLine().SafeInt();
+                #endregion
+                #region CreaNemico
                 Nemico nemico = new Nemico();
                 Console.WriteLine("È apparso un nemico!");
                 Console.WriteLine("Tira un D4 per il suo livello:");
@@ -51,6 +54,8 @@ namespace Jamlu
                     nemico.Vita = 24;
                     Console.WriteLine("La vita del nemico è 24");
                 }
+                #endregion
+                #region Attacchi
                 int numeroAttacchi = Math.Max(giocatore.Agilita / nemico.Agilita, 1);
                 Console.WriteLine($"Il tuo personaggio attaccherà {numeroAttacchi} volte per turno");
                 bool turnoGiocatore = giocatore.Agilita > nemico.Agilita;
@@ -120,19 +125,10 @@ namespace Jamlu
                     turno++;
                 }
                 while (giocatore.Vita > 0 && nemico.Vita > 0);
+                #endregion
                 Console.WriteLine("Spawnare un altro nemico? (s/n)");
             }
             while (Console.ReadLine().ToLower().Contains("s"));
         }
     }
-
-    
-
-    
-
-    
-
-    
-
-    
 }

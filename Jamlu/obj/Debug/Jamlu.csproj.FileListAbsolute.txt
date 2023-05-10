@@ -6,3 +6,11 @@ F:\Repos\Jamlu\Jamlu\obj\Debug\Jamlu.csproj.SuggestedBindingRedirects.cache
 F:\Repos\Jamlu\Jamlu\obj\Debug\Jamlu.csproj.CoreCompileInputs.cache
 F:\Repos\Jamlu\Jamlu\obj\Debug\Jamlu.exe
 F:\Repos\Jamlu\Jamlu\obj\Debug\Jamlu.pdb
+C:\Users\codex\Source\Repos\CodexOne03\Jamlu\Jamlu\obj\Debug\Jamlu.csproj.AssemblyReference.cache
+C:\Users\codex\Source\Repos\CodexOne03\Jamlu\Jamlu\obj\Debug\Jamlu.csproj.SuggestedBindingRedirects.cache
+C:\Users\codex\Source\Repos\CodexOne03\Jamlu\Jamlu\obj\Debug\Jamlu.csproj.CoreCompileInputs.cache
+C:\Users\codex\Source\Repos\CodexOne03\Jamlu\Jamlu\obj\Debug\Jamlu.exe
+C:\Users\codex\Source\Repos\CodexOne03\Jamlu\Jamlu\obj\Debug\Jamlu.pdb
+C:\Users\codex\Source\Repos\CodexOne03\Jamlu\Jamlu\bin\Debug\Jamlu.exe.config
+C:\Users\codex\Source\Repos\CodexOne03\Jamlu\Jamlu\bin\Debug\Jamlu.exe
+C:\Users\codex\Source\Repos\CodexOne03\Jamlu\Jamlu\bin\Debug\Jamlu.pdb

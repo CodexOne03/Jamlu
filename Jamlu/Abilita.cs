@@ -26,7 +26,7 @@ namespace Jamlu
             this.Nome = Testo.SN("Scrivi il nome dell'abilità:");
             //Console.WriteLine("Scrivi la quantità di turni impiegati per poter riutilizzare l'abilità:");
             //this.Ricarica = Console.ReadLine().SafeInt();
-        }
+        }/*
 
         public int Usa(int dannoIniziale)
         {
@@ -35,6 +35,6 @@ namespace Jamlu
                 case TipoAbilita.SerieColpi:
 
             }
-        }
+        }*/
     }
 }
